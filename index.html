@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Gyles' Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Gyles' Pizza!</h1>
+        <h3>"Where all sales are final and we DON'T care about quality assurance"</h3>
+      </div>
+      <div class="aboutBox">
+        <h2>About the pizzas we serve here:</h2>
+        <h5>"The Regular" - Your basic cheese and tomato sauce pizza. Nothing too exciting.</h5>
+        <h5>"The Vegan" - For all you vegans out there! A bunch of veggies and tomato sauce...no cheese here!</h5>
+        <h5>"The BEAST" - The complete opposite of "The Vegan". Basically a heart attack with bread.</h5>
+        <h5>"The Yawka" - Your typical New York style Pizza with cheese and pepperoni. Greasy, cheap, fulfilling. YUM!</h5>
+        <h5>"The Ditka" - Rounding off we have a Chicago style pizza named after famed Chicago Bears coach, Mike Ditka. Deep dish with TONS of tomato sauce.</h5>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="type">Select the type of pizza you would like to get:</label>
+            <select class="form-control" id="type">
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="size">How many inches:</label>
+            <input type="number" name="size" id="size">
+          </div>
+          <button type="submit" name="btn" class="btn btn-info">Submit your order!</button>
+        </form>
+      </div>
+      <div id="price">
+        <h1></h1>
+      </div>
+    </div>
+  </body>
+</html>
