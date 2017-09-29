@@ -22,11 +22,13 @@ Pizza.prototype.cost = function(size) {
 
 // UI Logic
 $(document).ready(function() {
+  alert(this.pizzaPrice);
+  // Creating new objects via Constructor
   var regular= new Pizza("The Regular", "Cheese and Tomato sauce", 13.00, 1);
-  var vegan = new Pizza("The Vegan", "Onions, tomatoes, bell peppers, olives, kale", 13.00, 2);
-  var beast = new Pizza("The BEAST", "Pepperoni, bacon, sausage, ham, eggs, extra cheese", 13.00, 3);
-  var yawka = new Pizza("The Yawka", "Cheese, pepperoni", 13.00, 4);
-  var ditka = new Pizza("The Ditka", "Sausage, pepperoni, bacon, cheese", 13.00, 5);
+  var vegan = new Pizza("The Vegan", "Onions, tomatoes, bell peppers, olives, and kale", 13.00, 2);
+  var beast = new Pizza("The BEAST", "Pepperoni, bacon, sausage, ham, eggs, and extra cheese", 13.00, 3);
+  var yawka = new Pizza("The Yawka", "Cheese, and pepperoni", 13.00, 4);
+  var ditka = new Pizza("The Ditka", "Sausage, pepperoni, bacon, and cheese", 13.00, 5);
 
   var pizzaArray = [regular, vegan, beast, yawka, ditka];
 
@@ -51,11 +53,8 @@ $(document).ready(function() {
         console.log(pizza.pizzaPrice)
         price = pizza.cost(size);
       }
-
     $("#price h2").text("You have chosen "+pizza.pizzaStyle+" with extra "+pizza.pizzaTopping+"! ");
     $("#price h1").text("Your price will be $"+pizza.pizzaPrice+".00")
     });
-
-
   });
 });
